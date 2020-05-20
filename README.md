@@ -4,6 +4,20 @@ We want your work to be readable by others; therefore, we encourage you to note 
 
 - Please write in Python 3.7+.  __print()__ is a function in Python 3 so __print "Hello"__ will _not_ work but __print("Hello")__ will.
 - Please focus hard on naming of functions, classes, and variables.  Help your reader by using __descriptive names__ that can help you to remove redundant comments.
+
+________________________
+#### Tip: Use meaningful names:
+
+  - **Be descriptive and imply type** - E.g. for `booleans`, you can prefix with `is_` or `has_` to make it clear it is a condition. You can also use part of speech to imply types, like verbs for functions and nouns for variables.
+  
+  - **Be consistent but clearly differentiate**- E.g. `age_list` and `age` is easier to differentiate than `ages` and `age`.
+  
+  - **Avoid abbreviations and especially single letters** - (Exception: counters and common math variables) Choosing when these exceptions can be made can be determined based on the audience for your code. If you work with other data scientists, certain variables may be common knowledge. While if you work with full stack engineers, it might be necessary to provide more descriptive names in these cases as well.
+  
+  - **Long names != descriptive names** - You should be descriptive, but only with relevant information. E.g. good functions names describe what they do well without including details about implementation or highly specific uses.
+
+
+________________________
   - Single letter variable names are _old school_ so please avoid them unless their life only spans a few lines.
   - Expand acronyms because __gcd()__ is hard to understand but __greatest_common_divisor()__ is not.
   - Please follow the [Python Naming Conventions](https://pep8.org/#prescriptive-naming-conventions) so variable_names and function_names should be lower_case, CONSTANTS in UPPERCASE, ClassNames should be CamelCase, etc.
